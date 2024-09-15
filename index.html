@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafat's Start Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        #header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #clock {
+            font-size: 60px;
+            font-weight: bold;
+        }
+        #bengali-date {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        #search-container {
+            margin: 10px 0;
+            text-align: center;
+        }
+        #search-bar {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        #rss-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .rss-column {
+            width: 30%;
+            border-right: 1px solid #ccc;
+            padding-right: 10px;
+        }
+        .rss-column:last-child {
+            border-right: none;
+        }
+        .feed-item {
+            padding: 5px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .feed-item a {
+            text-decoration: none;
+            color: #ccc;
+            margin-left: 5px;
+        }
+        .feed-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    
+</head>
+<body>
+
+    <div id="header">
+        <div id="clock"></div>
+        <div id="bengali-date"></div>
+        <div id="search-container">
+            <input type="text" id="search-bar" placeholder="খুঁজুন...">
+        </div>
+    </div>
+
+    <div id="rss-container">
+        <div class="rss-column" id="rss-feed-1"></div>
+        <div class="rss-column" id="rss-feed-2"></div>
+        <div class="rss-column" id="rss-feed-3"></div>
+    </div>
+
+    <script src="rss.js"></script>
+</body>
+</html>
